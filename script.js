@@ -23,23 +23,17 @@ setInterval(function(){
     }
 },1000)
 
-
-
-
-
 //creare una funzione che chiede all'utente di inserire
 //per 5 volte i numeri visualizzati in precedenza a schermo
 //questa funzione si attiva dopo 30 secondi
 setTimeout(requestUserNumbers, 31000);
 
 function requestUserNumbers(){
-    
     //chiede dal prompt per 5 volte dei numeri
     for (let i =0; i<5; i++){
     const inputNumbers = prompt("inserisci gli stessi numeri visualizzati a schermo");
     enteredNumbers.push(parseInt(inputNumbers));
     }
-    
 }
 
 

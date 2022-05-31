@@ -2,14 +2,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 400px;
+    padding-top: 100px;
+}
+
+#time{
+    font-size: 35px;
 }
 
 .numbers{
     color: black;
-    font-size: 70px;
+    font-size: 50px;
 }
 
 .nullNumber{
     color: white;
 }
+

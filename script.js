@@ -1,15 +1,24 @@
 //variabili globali
 const numbersContainer = document.getElementById("numbersContainer");
 const enteredNumbers=[];
-const readNumbersMemory = [1278, 859, 12, 43, 106];
+const readNumbersMemory = [];
 const numIndovinati =[];
 
 const countDown = document.getElementById("time");
 let secondiRimanenti = 30;
 
+//funzione per generare 5 numeri casuali
+function randomNumbers(){
+    for(let i=0; i<5; i++){
+        const random = Math.floor(Math.random() * 1000)+1;
+        readNumbersMemory.push(random);
+    }
+    return readNumbersMemory;
+}
+
 //stampare a video i numeri dell'array readNumbersMemory
 const numbers = document.createElement("div");
-numbers.innerText = readNumbersMemory;
+numbers.innerText = randomNumbers();
 numbers.classList.add("numbers");
 numbersContainer.append(numbers);
 

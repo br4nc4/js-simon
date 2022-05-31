@@ -2,6 +2,7 @@
 const numbersContainer = document.getElementById("numbersContainer");
 const enteredNumbers=[];
 const readNumbersMemory = [1278, 859, 12, 43, 106];
+console.log(readNumbersMemory);
 const numIndovianti =[];
 
 const countDown = document.getElementById("time");
@@ -34,13 +35,15 @@ function requestUserNumbers(){
     for (let i =0; i<5; i++){
     const inputNumbers = prompt("inserisci gli stessi numeri visualizzati a schermo");
     enteredNumbers.push(parseInt(inputNumbers));
+    console.log(enteredNumbers);
     }
 }
+
 
 //come faccio a verificare che i nuemri inseriti
 //dall'utente sono uguali a quelli dell'array iniziale?
 for (let i = 0; i<enteredNumbers.length; i++){
-
+    
 }
 
 

@@ -10,7 +10,7 @@ let secondiRimanenti = 30;
 //funzione per generare 5 numeri casuali
 function randomNumbers(){
     for(let i=0; i<5; i++){
-        const random = Math.floor(Math.random() * 1000)+1;
+        const random = Math.floor(Math.random() * 200)+1;
         readNumbersMemory.push(random);
     }
     return readNumbersMemory;
@@ -45,10 +45,6 @@ function requestUserNumbers(readNumbersMemory){
     const inputNumbers = prompt("inserisci gli stessi numeri visualizzati a schermo");
     enteredNumbers.push(parseInt(inputNumbers));
     //console.log(enteredNumbers);
-    if(readNumbersMemory.includes(parseInt(enteredNumbers[i]))){
-        numIndovinati.push(enteredNumbers[i])
-        console.log(numIndovinati);
-    }
     }
 } 
 

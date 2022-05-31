@@ -25,12 +25,12 @@ numbersContainer.append(numbers);
 //funzione che visualizza a schermo il countDown di 30s
 //raggiunto lo scadere del tempo
 //secondi = 0 i numeri visualizzati scompaiono
-const renderNumbers = setInterval(function(){
+const hideNumbers = setInterval(function(){
     secondiRimanenti--;
     countDown.innerText = secondiRimanenti;
     if(secondiRimanenti == 0){
         numbers.classList.add("nullNumber")
-        clearInterval(renderNumbers);
+        clearInterval(hideNumbers);
     }
 },1000)
 
@@ -44,23 +44,23 @@ function requestUserNumbers(readNumbersMemory){
     for (let i =0; i<5; i++){
     const inputNumbers = prompt("inserisci gli stessi numeri visualizzati a schermo");
     enteredNumbers.push(parseInt(inputNumbers));
-    console.log(enteredNumbers);
+    //console.log(enteredNumbers);
+    if(readNumbersMemory.includes(parseInt(enteredNumbers[i]))){
+        numIndovinati.push(enteredNumbers[i])
+        console.log(numIndovinati);
+    }
     }
 } 
 
 
 
-//test confronto tra array
-/* var array1 = [4,8,9,10]; 
-var array2 = [4,8,9,10]; 
-var is_same = (array1.length == array2.length) && array1.every(function(element, index) { return element === array2[index]; }); 
-console.log(is_same);
 
-if(is_same == true){
-    alert("l'array che contiene " + array1 + " è uguale all'array " + array2);
-} else{
-    alert(array1 + "non è uguale" + array2)
-} */
+
+
+
+
+
+
 
 
 

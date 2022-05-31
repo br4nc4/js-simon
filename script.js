@@ -1,7 +1,10 @@
+//variabili globali
 const numbersContainer = document.getElementById("numbersContainer");
 const enteredNumbers=[];
-const readNumbersMemory = [78, 85, 12, 43, 106];
+const readNumbersMemory = [1278, 859, 12, 43, 106];
 
+const countDown = document.getElementById("time");
+let secondiRimanenti = 30;
 
 //stampare a video i numeri dell'array readNumbersMemory
 const numbers = document.createElement("div");
@@ -9,15 +12,25 @@ numbers.innerText = readNumbersMemory;
 numbers.classList.add("numbers");
 numbersContainer.append(numbers);
 
+//funzione che visualizza a schermo il countDown di 30s
+//raggiunto lo scadere del tempo
+//secondi = 0 i numeri visualizzati scompaiono
+setInterval(function(){
+    secondiRimanenti--;
+    countDown.innerText = secondiRimanenti;
+    if(secondiRimanenti == 0){
+        numbers.classList.add("nullNumber")
+    }
+},1000)
+
+
 
 
 
 //creare una funzione che chiede all'utente di inserire
 //per 5 volte i numeri visualizzati in precedenza a schermo
 //questa funzione si attiva dopo 30 secondi
-//questsa funzione fa anche sparire dallo schermo i numeri
-
-setTimeout(requestUserNumbers, 30000);
+setTimeout(requestUserNumbers, 31000);
 
 function requestUserNumbers(){
     

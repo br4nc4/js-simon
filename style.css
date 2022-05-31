@@ -1,4 +1,15 @@
+#numbersContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 400px;
+}
+
 .numbers{
     color: black;
-    font-size: 100px;
+    font-size: 70px;
+}
+
+.nullNumber{
+    color: white;
 }

@@ -40,16 +40,18 @@ const hidenNumbers = setInterval(function(){
 //la funzione si attiva dopo 30 secondi
 setTimeout(requestUserNumbers, 31000);
 
-function requestUserNumbers(memoryNumbers){
+function requestUserNumbers(){
     //da prompt chiedere per 5 volte dei numeri
     for (let i =0; i<5; i++){
     const inputNumbers = prompt("inserisci gli stessi numeri visualizzati a schermo");
     userNumbers.push(parseInt(inputNumbers));
     //console.log(userNumbers);
-    /* if(memoryNumbers.includes(userNumbers[i]))
-        numIndovinati.push(userNumbers[i])
+    if(memoryNumbers.includes(userNumbers[i])){
+        numIndovinati.push(userNumbers[i]);
+        console.log(numIndovinati);
+    }
     
-    } */
+    }
 } 
 
 

@@ -16,7 +16,7 @@ function randomNumbers(){
         memoryNumbers.push(random);
     }
     //stampare a video i numeri dell'array memoryNumbers
-    numbers.innerText = memoryNumbers;
+    numbers.innerText = memoryNumbers.join(" - ");
     numbers.classList.add("numbers");
     numbersContainer.append(numbers);
 }
@@ -57,13 +57,12 @@ function requestUserNumbers(){
 
 //funzione per determinare i numeri indovinati
 function numeriIndovinati(){
-    if(numIndovinati.length===0)
-        {
-            alert("Non hai indovinato nessun numero");
-        }
-        else{
-            alert(`Hai indovinato ${numIndovinati.length} numeri \n questo è l'elenco di quelli indovinati \n ${numIndovinati.join(" ")}`);
-        }
+    if(numIndovinati.length===0){
+        alert("Non hai indovinato nessun numero");
+    }
+    else{
+        alert(`Hai indovinato ${numIndovinati.length} numeri \n questo è l'elenco di quelli indovinati \n ${numIndovinati.join(" ")}`);
+    }
 }
 
 

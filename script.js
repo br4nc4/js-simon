@@ -52,7 +52,7 @@ function requestUserNumbers(){
     }
     
     }
-    numIndovinati();
+    numeriIndovinati();
 } 
 
 //funzione per determinare i numeri indovinati

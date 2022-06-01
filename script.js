@@ -59,10 +59,10 @@ function requestUserNumbers(){
 function numeriIndovinati(){
     if(numIndovinati.length===0)
         {
-            alert(`Non hai indovinati tutti e ${numIndovinati.length} i numeri \n questo è l'elenco di quelli indovinati \n ${numIndovinati.join(" ")}`);
+            alert("Non hai indovinato nessun numero");
         }
         else{
-            alert(`Hai indovinato tutti e ${numIndovinati.length} i numeri \n questo è l'elenco di quelli indovinati \n ${numIndovinati.join(" ")}`);
+            alert(`Hai indovinato ${numIndovinati.length} numeri \n questo è l'elenco di quelli indovinati \n ${numIndovinati.join(" ")}`);
         }
 }
 

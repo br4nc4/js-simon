@@ -62,7 +62,7 @@ function numeriIndovinati(){
             alert("Non hai indovinato nessun numero");
         }
         else{
-            alert(`Hai indovinato ${numIndovinati.length} numeri \n questo è l'elenco di quelli indovinati \n ${indovinati.join(" ")}`);
+            alert(`Hai indovinato ${numIndovinati.length} numeri \n questo è l'elenco di quelli indovinati \n ${numIndovinati.join(" ")}`);
         }
 }
 
